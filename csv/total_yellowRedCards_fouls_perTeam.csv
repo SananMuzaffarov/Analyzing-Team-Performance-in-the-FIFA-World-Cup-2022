@@ -1,0 +1,21 @@
+Team,total_fouls,total_yellow_cards,total_red_cards,avg_fouls_per_match,avg_yellow_cards_per_match,avg_red_cards_per_match
+"Man United",413,83,3,10.87,2.18,0.08
+Ipswich,430,84,5,11.32,2.21,0.13
+Arsenal,400,64,6,10.53,1.68,0.16
+Everton,430,80,2,11.32,2.11,0.05
+Newcastle,394,68,1,10.37,1.79,0.03
+"Nott'm Forest",391,85,2,10.29,2.24,0.05
+"West Ham",443,78,3,11.66,2.05,0.08
+Brentford,319,62,1,8.39,1.63,0.03
+Chelsea,436,98,2,11.47,2.58,0.05
+Leicester,420,87,0,11.05,2.29,0.00
+Brighton,438,72,3,11.53,1.89,0.08
+"Crystal Palace",417,75,4,10.97,1.97,0.11
+Fulham,432,80,2,11.37,2.11,0.05
+"Man City",287,57,2,7.55,1.50,0.05
+Southampton,459,89,3,12.08,2.34,0.08
+Tottenham,446,70,1,11.74,1.84,0.03
+"Aston Villa",406,72,4,10.68,1.89,0.11
+Bournemouth,514,97,3,13.53,2.55,0.08
+Wolves,480,74,2,12.63,1.95,0.05
+Liverpool,430,64,3,11.32,1.68,0.08
