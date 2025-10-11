@@ -91,3 +91,16 @@ SELECT team, goals, goals_per90, avg_age
 FROM team_data 
 ORDER BY goals DESC 
 LIMIT 10;
+```
+
+## 📋 Future Enhancements
+
+- [ ] **Machine learning models for 2026 predictions** - Develop predictive algorithms using regression and classification models to forecast match outcomes and team performance
+- [ ] **Real-time data integration** - Create live data pipelines to incorporate real-time match statistics and player performance metrics
+- [ ] **Interactive dashboard development** - Build a web-based dashboard with filters, drill-down capabilities, and dynamic visualizations
+- [ ] **Player-level performance analysis** - Expand analysis to individual player statistics, tracking contributions and impact metrics
+- [ ] **Tournament simulation capabilities** - Implement Monte Carlo simulations to predict tournament brackets and championship probabilities
+
+## 📄 License
+
+This project is for analytical and educational purposes. All data derived from publicly available World Cup statistics. The analysis and visualizations are original work, while the underlying match data is sourced from publicly available FIFA World Cup records.
