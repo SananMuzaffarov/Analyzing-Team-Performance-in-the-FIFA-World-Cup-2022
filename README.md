@@ -80,7 +80,7 @@ Teams clustered into distinct playing styles:
 ## 🚀 Getting Started
 
 ### Prerequisites
-- SQL database for querying team_data
+- SQL database for querying team data
 - Data visualization tools for PNG files
 - Statistical analysis software (optional)
 
