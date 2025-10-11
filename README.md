@@ -6,22 +6,6 @@ A comprehensive data analysis project exploring team performance metrics, playin
 
 This project analyzes team performance data from the 2022 FIFA World Cup to identify key success factors, team playing styles, and predict promising teams for the 2026 World Cup. The analysis covers multiple dimensions including squad age, offensive/defensive balance, set-piece effectiveness, and goalkeeper performance.
 
-## 📁 Project Structure
-├── data/
-│ ├── team_data.csv # Complete team performance statistics
-│ └── team_data.sql # SQL queries for data analysis
-├── visualizations/
-│ ├── 2026potential-2.png # 2026 World Cup team potential analysis
-│ ├── aerial.png # Set-piece and aerial effectiveness
-│ ├── age1.png # Squad age vs scoring performance
-│ ├── age2.png # Team age distribution analysis
-│ ├── averageStats.png # Distribution of key metrics
-│ ├── correlationMatrix1.png # Team playing styles clustering
-│ ├── correlationMatrix2.png # Offensive vs defensive balance
-│ ├── goalkeeper2.png # Goalkeeper performance analysis
-│ └── topAvgStats.png # Top performers in key categories
-└── README.md
-
 ## 🔍 Key Insights
 
 ### 🎯 2026 World Cup Potential
