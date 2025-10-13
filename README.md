@@ -71,6 +71,7 @@ Teams clustered into distinct playing styles:
 - SQL queries for data extraction and aggregation
 - CSV dataset with complete team performance statistics
 - Statistical analysis using correlation matrices and distribution plots
+- Implemented entirely in Google Colab, utilizing Python and its data analysis libraries
 
 ### Visualization
 - Multiple chart types: bar charts, scatter plots, distribution graphs
@@ -83,6 +84,7 @@ Teams clustered into distinct playing styles:
 - SQL database for querying team data
 - Data visualization tools for PNG files
 - Statistical analysis software (optional)
+- All visualizations were generated and displayed directly within **Google Colab** notebooks
 
 ### Basic Analysis
 ```sql
