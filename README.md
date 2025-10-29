@@ -42,6 +42,12 @@ Teams clustered into distinct playing styles:
 - Strong correlation between corners and goals (r = 0.727)
 - Strong correlation between aerial duels and goals (r = 0.667)
 
+**Statistical Modelling (Python/Colab):**  
+- Assignment of a **Success_Score** based on tournament stage reached (Group Stage = 1, Round of 16 = 2, Quarter-Finals = 3, Semi-Finals and beyond = 4–7).  
+- Multiple regression model to identify which performance metrics predict tournament success.  
+- Metrics used in regression: `goals_per90`, `possession`, `tackles`, `aerials_won_pct`, `gk_clean_sheets`, `avg_age`.
+> The notebook can be run interactively in [Google Colab](https://colab.research.google.com/) or locally via Jupyter.
+
 ### 🧑‍🤝‍🧑 Squad Age Analysis
 - **Youngest Teams**: USA (25.4), Ecuador (25.8), Ghana (26.4), Spain (26.4)
 - **Oldest Teams**: Belgium (30.6), Costa Rica (30.6), Iran (29.3), Croatia (29.2)
