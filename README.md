@@ -4,7 +4,9 @@ A comprehensive data analysis project exploring team performance metrics, playin
 
 ## 📊 Project Overview
 
-This project analyzes team performance data from the 2022 FIFA World Cup to identify key success factors, team playing styles, and predict promising teams for the 2026 World Cup. The analysis covers multiple dimensions including squad age, offensive/defensive balance, set-piece effectiveness, and goalkeeper performance.
+This project analyzes team performance data from the 2022 FIFA World Cup to identify key success factors and team playing styles. The analysis covers multiple dimensions including squad age, offensive/defensive balance, set-piece effectiveness, and goalkeeper performance.
+
+A key component of this project is the statistical modeling attempt to identify the most significant predictors of tournament success, which reveals the unique statistical challenges of analyzing small-sample, high-stakes tournament data.
 
 ## 🔍 Key Insights
 
@@ -43,10 +45,15 @@ Teams clustered into distinct playing styles:
 - Strong correlation between aerial duels and goals (r = 0.667)
 
 **Statistical Modelling (Python/Colab):**  
-- Assignment of a **Success_Score** based on tournament stage reached (Group Stage = 1, Round of 16 = 2, Quarter-Finals = 3, Semi-Finals and beyond = 4–7).  
-- Multiple regression model to identify which performance metrics predict tournament success.  
-- Metrics used in regression: `goals_per90`, `possession`, `tackles`, `aerials_won_pct`, `gk_clean_sheets`, `avg_age`.
-> The notebook can be run interactively in [Google Colab](https://colab.research.google.com/) or locally via Jupyter.
+- A Binary Logistic Regression model was built to identify which performance metrics predict knockout stage advancement.
+
+- A binary dependent variable, Reached_Knockouts (0 = Group Stage, 1 = Advanced), was created from the original Success_Score.
+
+- Metrics used in regression: goals_per90, possession, tackles, aerial_won_pct, gk_clean_sheets, avg_age.
+
+- Key Finding: The model produced a "quasi-separation" warning (Pseudo R² = 0.8265). This is a critical insight: the 16 teams that advanced were too statistically different from the 16 that were eliminated for the model to find a stable solution.
+
+- Conclusion: This highlights the statistical challenges of modeling small-sample tournament data (n=32). Because of this separation, the model's individual coefficients and p-values are unstable and cannot be used to definitively name the most significant predictors.
 
 ### 🧑‍🤝‍🧑 Squad Age Analysis
 - **Youngest Teams**: USA (25.4), Ecuador (25.8), Ghana (26.4), Spain (26.4)
@@ -63,11 +70,11 @@ Teams clustered into distinct playing styles:
 1. **Descriptive Analytics**: Distribution analysis of key performance indicators
 2. **Correlation Analysis**: Identifying relationships between different metrics
 3. **Cluster Analysis**: Grouping teams by playing styles
-4. **Predictive Modeling**: Projecting team potential for 2026 based on youth and current performance
+4. **Statistical Modeling**: An attempt to model success factors using a Binary Logistic Regression with the statsmodels library to understand what predicts advancement to the knockout stage.
 
 ### Key Metrics Tracked
-- Offensive: Goals, shots, possession, passes completed
-- Defensive: Tackles, interceptions, clearances
+- Offensive: Goals, shots, possession, passes completed, goals_per90
+- Defensive: Tackles, interceptions, clearances, gk_clean_sheets
 - Special: Set-pieces, aerial duels, goalkeeper performance
 - Developmental: Squad age, player utilization, progression metrics
 
@@ -78,6 +85,9 @@ Teams clustered into distinct playing styles:
 - CSV dataset with complete team performance statistics
 - Statistical analysis using correlation matrices and distribution plots
 - Implemented entirely in Google Colab, utilizing Python and its data analysis libraries
+- Pandas library used for data loading, manipulation, and descriptive statistics.
+- Statsmodels library used to build and evaluate the Binary Logistic Regression model.
+- Matplotlib & Seaborn used for visualizations.
 
 ### Visualization
 - Multiple chart types: bar charts, scatter plots, distribution graphs
